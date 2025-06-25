@@ -11,7 +11,7 @@ class Circle(Shape):
         return f"The radius is {self.radius} meters."
 
     def area(self):
-        return math.pi * self.radius ** 2
+        return round(math.pi * (self.radius ** 2), 3)
 
     def perimeter(self):
         return 2 * math.pi * self.radius
