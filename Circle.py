@@ -8,7 +8,7 @@ class Circle(Shape):
             raise TypeError("Error! Invalid value or type")
 
     def __str__(self):
-        return f"The length of the radius is {self.radius} meters."
+        return f"The radius is {self.radius} meters."
 
     def area(self):
         return math.pi * self.radius ** 2

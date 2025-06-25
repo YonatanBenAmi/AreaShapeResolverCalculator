@@ -8,4 +8,4 @@ class Shape:
 
     @staticmethod
     def checking(num):
-        return (type(num) == int or type(num) == float) and num >= 0
+        return (type(num) == int or type(num) == float) and num > 0
