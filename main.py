@@ -6,7 +6,9 @@ from  Triangle import Triangle
 from  Circle import Circle
 
 class Main:
-    h1 = Hexagon(5)
+    h1 = Square(5)
     h1.print_area(h1)
+    print(h1.perimeter())
+    print(h1)
 
 Main()

@@ -1,7 +1,12 @@
+from Rectangle import Rectangle
 from Shape import Shape
 
-class Square(Shape):
+class Square(Rectangle):
     def __init__(self, side):
+        super().__init__(side, side)
         self.side = side
-    def area(self):
-        return self.side ** 2
+
+    def __str__(self):
+        return f"The length of the side is {self.side1} meters."
+
+
