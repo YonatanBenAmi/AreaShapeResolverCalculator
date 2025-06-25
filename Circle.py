@@ -4,6 +4,8 @@ from Shape import Shape
 class Circle(Shape):
     def __init__(self, radius):
         self.radius = radius
+        if not Shape.checking(self.radius):
+            raise TypeError("Error! Invalid value or type")
 
     def __str__(self):
         return f"The length of the radius is {self.radius} meters."

@@ -4,6 +4,8 @@ from Shape import Shape
 class Hexagon(Shape):
     def __init__(self, side):
         self.side = side
+        if not Shape.checking(self.side):
+            raise TypeError("Error! Invalid value or type")
 
     def __str__(self):
         return f"The length of the side is {self.side} meters."
